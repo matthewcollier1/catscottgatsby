@@ -1,0 +1,20 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.headerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  color: white;
+}
+
+.headerNav li {
+  color: white;
+  border: 1px solid;
+}

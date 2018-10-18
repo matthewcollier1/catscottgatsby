@@ -1,0 +1,4 @@
+.shops {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+}
