@@ -6,6 +6,11 @@
   justify-content: space-around;
 }
 
+.footer img {
+  width: 10%;
+  height: 10%;
+}
+
 .footerNav {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import logo from '../images/DSSlogo.png'
+
 import footerStyle from './footer.module.css'
 
 const Footer = () => (
@@ -8,6 +10,7 @@ const Footer = () => (
     <h2>
       <Link to="/">This Is The Footer</Link>
     </h2>
+    <img src={logo} alt="Dot Scott Studio Logo" />
     <ul className={footerStyle.footerNav}>
       <li>
         <Link to="/contact">Contact</Link>

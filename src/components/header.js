@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import headerStyle from './header.module.css'
 
-import '../images/logo-splat.png'
+import logoSplat from '../images/logo-splat.png'
 
 const Header = ({ siteTitle }) => (
   <StaticQuery
@@ -16,11 +16,7 @@ const Header = ({ siteTitle }) => (
       }
     `}
     render={data => (
-      <div
-        style={{
-          background: 'rebeccapurple',
-        }}
-      >
+      <div className={headerStyle.headerContainer}>
         <div className={headerStyle.header}>
           <h1 style={{ margin: 0 }}>
             <Link
@@ -33,6 +29,7 @@ const Header = ({ siteTitle }) => (
               {siteTitle}
             </Link>
           </h1>
+          <img src={logoSplat} alt="Dot Scott Studio Logo" />
           <ul className={headerStyle.headerNav}>
             <li>
               <Link to="/contact">Contact</Link>
